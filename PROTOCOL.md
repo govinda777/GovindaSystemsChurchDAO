@@ -75,6 +75,11 @@ Os eventos e rituais da Govinda Systems Church DAO são projetados para fortalec
 ### 4.4. Proposição de Novos Eventos
 Os membros são incentivados a propor novos eventos e rituais que estejam alinhados com os valores da DAO. As propostas devem ser submetidas à comunidade para discussão e votação.
 
+### 4.5. Registro de Eventos
+Para manter um registro histórico transparente e acessível de nossas atividades, todos os eventos oficiais da DAO devem ser documentados. O registro deve seguir o modelo padrão disponível em [`cultos/TEMPLATE.md`](../cultos/TEMPLATE.md).
+
+O responsável pela organização do evento é também responsável por preencher e submeter o registro em até 48 horas após a conclusão do evento. Os registros completos devem ser armazenados no diretório [`cultos/`](../cultos/).
+
 ## 5. Comunicação e Rede Social Interna
 
 A comunicação aberta e o fortalecimento dos laços comunitários são essenciais para a Govinda Systems Church DAO. Para isso, mantemos canais de comunicação claros e uma rede social interna.
