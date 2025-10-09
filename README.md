@@ -15,6 +15,8 @@
 
 Realizamos um culto de consagração com Ayahuasca na última sexta-feira de cada mês. Esta cerimônia de retrospectiva é uma oportunidade para refletir e renovar nosso compromisso com nossos valores.
 
+Para acessar os registros de nossos eventos passados, visite o diretório de [cultos](./cultos/).
+
 ## Eventos
 
 * **Aconselhamento**: Todas as terças, das 08:40 às 09:40.
