@@ -1,4 +1,4 @@
-## Documentação: Govinda Systems Church DAO
+## Govinda Systems Church DAO
 
 Esta documentação descreve a estrutura, o propósito e o funcionamento da **Govinda Systems Church DAO (Organização Autônoma Descentralizada)**, uma entidade inovadora que une os princípios da fé, da governança comunitária descentralizada e da tecnologia *blockchain* (NFTs e Smart Contracts).
 
