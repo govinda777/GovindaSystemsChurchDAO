@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import Provider from "./privy-provider";
-import Navbar from "../components/Navbar";
+import type { Metadata } from 'next';
+import './globals.css';
+import Provider from './privy-provider';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
-  title: "Govinda Systems Church DAO",
-  description: "A decentralized church for the new age.",
+  title: 'Govinda Systems Church DAO',
+  description: 'A decentralized church for the new age.',
 };
 
 export default function RootLayout({
@@ -27,7 +28,8 @@ export default function RootLayout({
       <body>
         <Provider>
           <Navbar />
-          {children}
+          <main>{children}</main>
+          <Footer />
         </Provider>
       </body>
     </html>
