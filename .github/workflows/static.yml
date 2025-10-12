@@ -25,6 +25,9 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./website
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -40,8 +43,10 @@ jobs:
       - name: Build with Next.js
         working-directory: ./website
         run: npm run build
+
       - name: List files in website directory
         run: ls -R website
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
