@@ -54,7 +54,7 @@ A Govinda Systems Church DAO opera primariamente através do sistema de proposta
 
 ## 4. Transparência e Confiança
 
-A principal força da Govinda Systems Church DAO reside na sua **transparência radical**:
+A principal força da Govinda Systems Church DAO reside na sua **transparência**:
 
 * **Transparência Total:** Todas as decisões, votações e transações financeiras são **visíveis a todos** e permanentemente registradas no *blockchain*.
 * **Auditabilidade:** Qualquer membro pode verificar para onde os dízimos e as ofertas estão sendo direcionados.

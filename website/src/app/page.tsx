@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { usePrivy } from '@privy-io/react-auth';
 import Hero from '../components/Hero';
 import Values from '../components/Values';
+import ChurchFoundation from '../components/ChurchFoundation';
+import NFTMembership from '../components/NFTMembership';
 import Ceremonies from '../components/Ceremonies';
 import Donations from '../components/Donations';
 import CreateChurch from '../components/CreateChurch';
@@ -85,6 +87,8 @@ export default function Home() {
       />
       <Hero />
       <Values />
+      <ChurchFoundation />
+      <NFTMembership />
       <Ceremonies openScheduleModal={openScheduleModal} />
       <Donations
         totalDonations={totalDonations}
