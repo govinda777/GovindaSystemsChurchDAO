@@ -1,5 +1,11 @@
 .ceremonies {
-  padding: var(--space-32) 0;
+  padding: var(--space-64) 0;
+  background: linear-gradient(
+    180deg,
+    var(--color-slate-800) 0%,
+    var(--color-slate-900) 100%
+  );
+  color: #fff;
 }
 
 .ceremonyTabs {
@@ -42,12 +48,53 @@
 }
 
 .ceremonyCard {
-  background: var(--color-surface);
+  background-size: cover;
+  background-position: center;
   padding: var(--space-20);
   border-radius: var(--radius-md);
-  border: 1px solid var(--color-card-border);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all var(--duration-normal) var(--ease-standard);
   animation: fadeInUp 0.6s ease-out;
+  position: relative;
+  overflow: hidden;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.ceremonyCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.ceremonyCard:nth-child(1) {
+  background-image: url('/ceremonies/missa.jpg');
+}
+
+.ceremonyCard:nth-child(2) {
+  background-image: url('/ceremonies/ayahuasca.jpg');
+}
+
+.ceremonyCard:nth-child(3) {
+  background-image: url('/ceremonies/jamaicana.jpg');
+}
+
+.ceremonyCard:nth-child(4) {
+  background-image: url('/ceremonies/mexicana.jpg');
+}
+
+.ceremonyCard:nth-child(5) {
+  background-image: url('/ceremonies/ripe.jpg');
 }
 
 .ceremonyCard:hover {

@@ -48,6 +48,7 @@
 .pillarHeader i {
   font-size: 2.5rem;
   color: #f7931a;
+  text-shadow: 0 0 15px rgba(247, 147, 26, 0.7);
 }
 
 .pillarHeader h3 {
@@ -68,6 +69,11 @@
   padding: 25px;
   border-radius: 12px;
   margin-bottom: 25px;
+  transition: background 0.3s ease;
+}
+
+.keyPoints:hover {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .keyPoints h4 {

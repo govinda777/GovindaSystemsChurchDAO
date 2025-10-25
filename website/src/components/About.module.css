@@ -1,20 +1,26 @@
 .about {
-  padding: var(--space-32) 0;
-  background: var(--color-bg-3);
+  padding: var(--space-64) 0;
+  background: linear-gradient(
+    180deg,
+    var(--color-slate-900) 0%,
+    var(--color-slate-800) 100%
+  );
+  color: #fff;
 }
 
 .aboutContent {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-32);
-  margin-top: var(--space-24);
+  gap: var(--space-48);
+  margin-top: var(--space-48);
 }
 
 .philosophy h3,
 .bitcoinPhilosophy h3 {
-  font-size: var(--font-size-xl);
-  margin-bottom: var(--space-16);
-  color: var(--color-primary);
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-24);
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .principlesList {
@@ -25,19 +31,22 @@
 .principlesList li {
   display: flex;
   align-items: center;
-  gap: var(--space-12);
-  margin-bottom: var(--space-12);
-  color: var(--color-text);
-}
-
-.principlesList i {
-  color: var(--color-teal-500);
+  gap: var(--space-16);
+  margin-bottom: var(--space-16);
+  color: #d0d0d0;
   font-size: var(--font-size-lg);
 }
 
+.principlesList i {
+  color: var(--color-teal-300);
+  font-size: var(--font-size-xl);
+  text-shadow: 0 0 8px var(--color-teal-300);
+}
+
 .bitcoinPhilosophy p {
-  color: var(--color-text-secondary);
-  line-height: 1.6;
+  color: #d0d0d0;
+  line-height: 1.8;
+  font-size: var(--font-size-lg);
 }
 
 @media (max-width: 768px) {
