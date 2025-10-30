@@ -2,6 +2,8 @@
 
 <img src="g.png" height="20%" width="20%" alt="Unform" />
 
+[perplexity](https://www.perplexity.ai/search/preciso-organizar-e-estruturar-izEy4CnWSfeJ_1xa_v.8kA#1)
+
 ## Nossos Valores
 
 1. **Comunidade e fraternidade**: Acreditamos no espírito de comunidade e fraternidade, condições humanas únicas que nos unem em nossa fé compartilhada.
