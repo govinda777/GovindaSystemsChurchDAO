@@ -26,7 +26,14 @@ const Donations = ({
   return (
     <section id="doacoes" className={styles.donations}>
       <div className="container">
-        <h2 className="section-title">Doações e Dízimos</h2>
+        <h2 className="section-title">Doações</h2>
+        <p>A Govinda Systems Church segue um protocolo rigido de controle de segurança , ante fraude e corrupcao, para isso implementamos todas as boas praticas de auditoria e transparencia no nosso protocolo. Sobrevivemos apenas das Receitas feitas por doacoes voluntárias feitas pelo :</p>
+        <ul>
+          <li>Github payment</li>
+          <li>Smart Wallets (ETH / BTC / WBTC / USDT)</li>
+          <li>PIX</li>
+        </ul>
+        <p>Atualmente, o formulário abaixo aceita apenas doações em ETH. Para doar BTC, WBTC, USDT, ou via Github e PIX, por favor, entre em contato conosco.</p>
         <div className={styles.donationsContent}>
           <div className={styles.donationInfo}>
             <h3>Transparência Total</h3>
@@ -48,7 +55,7 @@ const Donations = ({
             </div>
           </div>
           <div className={styles.donationForm}>
-            <h3>Fazer Doação</h3>
+            <h3>Fazer Doação (ETH)</h3>
             <form onSubmit={onDonate}>
               <div className="form-group">
                 <label className="form-label">Valor (ETH)</label>
