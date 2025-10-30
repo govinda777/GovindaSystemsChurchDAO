@@ -1,0 +1,24 @@
+.philanthropy {
+  padding: 60px 0;
+}
+
+.philanthropyContent h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.philanthropyContent ul {
+  list-style: none;
+  padding: 0;
+}
+
+.philanthropyContent li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.philanthropyContent p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 20px;
+}

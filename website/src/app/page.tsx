@@ -8,6 +8,8 @@ import ChurchFoundation from '../components/ChurchFoundation';
 import NFTMembership from '../components/NFTMembership';
 import Ceremonies from '../components/Ceremonies';
 import Donations from '../components/Donations';
+import Audit from '../components/Audit';
+import Philanthropy from '../components/Philanthropy';
 import CreateChurch from '../components/CreateChurch';
 import About from '../components/About';
 import ScheduleModal from '../components/ScheduleModal';
@@ -95,6 +97,8 @@ export default function Home() {
         handleDonate={handleDonate}
         showNotification={showNotification}
       />
+      <Audit />
+      <Philanthropy />
       <CreateChurch />
       <About />
       <ScheduleModal
