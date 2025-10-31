@@ -3,21 +3,18 @@
 import { useState } from 'react';
 import { usePrivy } from '@privy-io/react-auth';
 import Hero from '../components/Hero';
-import Values from '../components/Values';
 import ChurchFoundation from '../components/ChurchFoundation';
-import NFTMembership from '../components/NFTMembership';
 import Ceremonies from '../components/Ceremonies';
 import Donations from '../components/Donations';
 import Audit from '../components/Audit';
 import Philanthropy from '../components/Philanthropy';
 import CreateChurch from '../components/CreateChurch';
 import About from '../components/About';
-import ScheduleModal from '../components/ScheduleModal';
 import Notification from '../components/Notification';
+import Link from 'next/link';
 
 export default function Home() {
   const { authenticated, login } = usePrivy();
-  const [isScheduleModalOpen, setScheduleModalOpen] = useState(false);
   const [notification, setNotification] = useState<{
     message: string;
     type: string;
@@ -30,9 +27,6 @@ export default function Home() {
       setNotification(null);
     }, 5000);
   };
-
-  const openScheduleModal = () => setScheduleModalOpen(true);
-  const closeScheduleModal = () => setScheduleModalOpen(false);
 
   const handleDonate = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -55,32 +49,6 @@ export default function Home() {
     form.reset();
   };
 
-  const handleSchedule = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const form = event.currentTarget;
-    const nameInput = form.elements.namedItem('name') as HTMLInputElement;
-    const emailInput = form.elements.namedItem('email') as HTMLInputElement;
-    const ceremonyInput = form.elements.namedItem(
-      'ceremony'
-    ) as HTMLSelectElement;
-
-    const name = nameInput.value;
-    const email = emailInput.value;
-    const ceremony = ceremonyInput.value;
-
-    if (!name || !email || !ceremony) {
-      showNotification('Por favor, preencha todos os campos', 'error');
-      return;
-    }
-
-    showNotification(
-      `Agendamento para ${ceremony} confirmado!`,
-      'success'
-    );
-    closeScheduleModal();
-    form.reset();
-  };
-
   return (
     <>
       <Notification
@@ -88,10 +56,11 @@ export default function Home() {
         setNotification={setNotification}
       />
       <Hero />
-      <Values />
       <ChurchFoundation />
-      <NFTMembership />
-      <Ceremonies openScheduleModal={openScheduleModal} />
+      <Ceremonies openScheduleModal={() => {
+        // This will be replaced with a link to the contact page
+        window.location.href = '/pages/contato';
+      }} />
       <Donations
         totalDonations={totalDonations}
         handleDonate={handleDonate}
@@ -101,11 +70,6 @@ export default function Home() {
       <Philanthropy />
       <CreateChurch />
       <About />
-      <ScheduleModal
-        isScheduleModalOpen={isScheduleModalOpen}
-        closeScheduleModal={closeScheduleModal}
-        handleSchedule={handleSchedule}
-      />
     </>
   );
 }
