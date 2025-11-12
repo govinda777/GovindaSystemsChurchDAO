@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Modo de desenvolvimento - removido 'output: export'
   basePath: process.env.NODE_ENV === 'production' ? '/GovindaSystemsChurchDAO' : '',
   images: {
     unoptimized: process.env.NODE_ENV === 'production',
