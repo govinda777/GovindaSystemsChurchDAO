@@ -303,14 +303,18 @@ html {
   font-family: var(--font-family-base);
   line-height: var(--line-height-normal);
   color: var(--color-text);
-  background-color: var(--color-background);
+  background-color: #0a0a1a; /* Azul muito escuro, quase preto */
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  min-height: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
+  color: #ffffff; /* Cor do texto branco para melhor contraste */
+  background-color: #0a0a1a; /* Azul muito escuro, quase preto */
+  min-height: 100vh;
 }
 
 *,
