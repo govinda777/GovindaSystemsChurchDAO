@@ -1,0 +1,207 @@
+.foundation {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #fff;
+}
+
+.foundationIntro {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.introText {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+.foundationContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.foundationPillar {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foundationPillar:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.pillarHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.pillarHeader i {
+  font-size: 2.5rem;
+  color: #f7931a;
+}
+
+.pillarHeader h3 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #fff;
+}
+
+.pillarContent p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: #d0d0d0;
+}
+
+.keyPoints {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.keyPoints h4 {
+  color: #f7931a;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.keyPoints ul {
+  list-style: none;
+  padding: 0;
+}
+
+.keyPoints li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.keyPoints li:last-child {
+  border-bottom: none;
+}
+
+.keyPoints strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.foundationLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #f7931a 0%, #ff6b35 100%);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foundationLink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(247, 147, 26, 0.4);
+}
+
+.foundationLink i {
+  font-size: 1.2rem;
+}
+
+.applicationSection {
+  margin: 60px 0;
+  text-align: center;
+}
+
+.applicationSection h3 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.applicationGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.applicationCard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.applicationCard:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.applicationCard i {
+  font-size: 3rem;
+  color: #f7931a;
+  margin-bottom: 20px;
+}
+
+.applicationCard h4 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.applicationCard p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d0d0d0;
+}
+
+.quote {
+  margin-top: 60px;
+  padding: 40px;
+  background: rgba(247, 147, 26, 0.1);
+  border-left: 4px solid #f7931a;
+  border-radius: 8px;
+}
+
+.quote blockquote {
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .foundationContent {
+    grid-template-columns: 1fr;
+  }
+
+  .foundationPillar {
+    padding: 25px;
+  }
+
+  .pillarHeader h3 {
+    font-size: 1.5rem;
+  }
+
+  .applicationGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .quote blockquote {
+    font-size: 1.1rem;
+  }
+}

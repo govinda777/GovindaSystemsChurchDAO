@@ -1,0 +1,47 @@
+.about {
+  padding: var(--space-32) 0;
+  background: var(--color-bg-3);
+}
+
+.aboutContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-32);
+  margin-top: var(--space-24);
+}
+
+.philosophy h3,
+.bitcoinPhilosophy h3 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-16);
+  color: var(--color-primary);
+}
+
+.principlesList {
+  list-style: none;
+  padding: 0;
+}
+
+.principlesList li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+  margin-bottom: var(--space-12);
+  color: var(--color-text);
+}
+
+.principlesList i {
+  color: var(--color-teal-500);
+  font-size: var(--font-size-lg);
+}
+
+.bitcoinPhilosophy p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .aboutContent {
+    grid-template-columns: 1fr;
+  }
+}

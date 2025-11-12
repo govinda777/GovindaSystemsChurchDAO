@@ -1,0 +1,453 @@
+.nftSection {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  color: #fff;
+}
+
+.introSection {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.introText {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+/* Genesis Section */
+.genesisSection {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 60px;
+  border: 2px solid rgba(247, 147, 26, 0.3);
+}
+
+.genesisHeader {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.genesisHeader i {
+  font-size: 3rem;
+  color: #f7931a;
+}
+
+.genesisHeader h3 {
+  font-size: 2rem;
+  margin: 0;
+  color: #fff;
+}
+
+.genesisContent p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #d0d0d0;
+}
+
+.genesisFeatures {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 25px;
+  background: rgba(247, 147, 26, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(247, 147, 26, 0.3);
+}
+
+.feature i {
+  font-size: 1.5rem;
+  color: #f7931a;
+}
+
+.feature span {
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Membership System */
+.membershipSystem {
+  margin: 60px 0;
+}
+
+.membershipSystem h3 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+.nftTiers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.nftTier {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.nftTier:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.tierBadge {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.tierBadge i {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.nftTier h4 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.tierDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #d0d0d0;
+  text-align: center;
+}
+
+.professionProcess {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.professionProcess h5 {
+  color: #f7931a;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.professionProcess ol {
+  padding-left: 20px;
+  color: #d0d0d0;
+}
+
+.professionProcess li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.tierBenefits {
+  list-style: none;
+  padding: 0;
+  margin-top: auto;
+}
+
+.tierBenefits li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #d0d0d0;
+}
+
+.tierBenefits li:last-child {
+  border-bottom: none;
+}
+
+.tierBenefits i {
+  color: #4ade80;
+  font-size: 1rem;
+}
+
+/* Mandala Section */
+.mandalaSection {
+  margin: 80px 0;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  padding: 50px;
+}
+
+.mandalaContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.mandalaText h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.mandalaText p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #d0d0d0;
+}
+
+.mandalaFeatures {
+  list-style: none;
+  padding: 0;
+}
+
+.mandalaFeatures li {
+  padding: 15px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mandalaFeatures li:last-child {
+  border-bottom: none;
+}
+
+.mandalaFeatures i {
+  font-size: 1.5rem;
+  color: #f7931a;
+  margin-top: 5px;
+}
+
+.mandalaFeatures strong {
+  color: #fff;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.mandalaVisual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mandalaPlaceholder {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 40px rgba(102, 126, 234, 0.4);
+  animation: rotate 20s linear infinite;
+}
+
+.mandalaPlaceholder i {
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.mandalaPlaceholder p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+.mandalaPlaceholder span {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 10px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Governance Section */
+.governanceSection {
+  margin: 60px 0;
+}
+
+.governanceSection h3 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.governanceIntro {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  color: #d0d0d0;
+}
+
+.governanceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.governanceCard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.governanceCard:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.governanceCard i {
+  font-size: 3rem;
+  color: #f7931a;
+  margin-bottom: 20px;
+}
+
+.governanceCard h4 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.governanceCard p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d0d0d0;
+}
+
+/* CTA Section */
+.ctaSection {
+  margin-top: 80px;
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(135deg, rgba(247, 147, 26, 0.1) 0%, rgba(255, 107, 53, 0.1) 100%);
+  border-radius: 16px;
+  border: 2px solid rgba(247, 147, 26, 0.3);
+}
+
+.ctaSection h3 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.ctaSection p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #d0d0d0;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 35px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.primaryButton {
+  background: linear-gradient(135deg, #f7931a 0%, #ff6b35 100%);
+  color: #fff;
+}
+
+.primaryButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(247, 147, 26, 0.4);
+}
+
+.secondaryButton {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.secondaryButton:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nftTiers {
+    grid-template-columns: 1fr;
+  }
+
+  .mandalaContent {
+    grid-template-columns: 1fr;
+  }
+
+  .mandalaPlaceholder {
+    width: 250px;
+    height: 250px;
+  }
+
+  .mandalaPlaceholder i {
+    font-size: 4rem;
+  }
+
+  .governanceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}
