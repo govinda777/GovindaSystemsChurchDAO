@@ -32,7 +32,7 @@ const Navbar = () => {
             <Link href="/pages/contato" className={styles.navLink} onClick={() => setMenuOpen(false)}>Contato</Link>
             <button className="btn btn--primary" onClick={authenticated ? logout : login}>
               <i className="fas fa-wallet"></i>
-              {ready && (authenticated ? 'Logout' : ' Connect Wallet')}
+              {ready && (authenticated ? 'Logout' : 'Connect Wallet')}
             </button>
           </div>
           <div className={styles.navToggle} id="nav-toggle" onClick={toggleMenu}>
