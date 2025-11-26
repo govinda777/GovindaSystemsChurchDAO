@@ -26,6 +26,7 @@ const Navbar = () => {
             <Link href="/pages/sobre" className={styles.navLink} onClick={() => setMenuOpen(false)}>Valores</Link>
             <Link href="/pages/jornada" className={styles.navLink} onClick={() => setMenuOpen(false)}>Jornada</Link>
             <Link href="#cerimonias" className={styles.navLink} onClick={() => setMenuOpen(false)}>Cerimônias</Link>
+            <Link href="/pages/app" className={styles.navLink} onClick={() => setMenuOpen(false)}>App</Link>
             <Link href="#doacoes" className={styles.navLink} onClick={() => setMenuOpen(false)}>Doações</Link>
             <Link href="#sobre" className={styles.navLink} onClick={() => setMenuOpen(false)}>Sobre</Link>
             <Link href="/pages/contato" className={styles.navLink} onClick={() => setMenuOpen(false)}>Contato</Link>
