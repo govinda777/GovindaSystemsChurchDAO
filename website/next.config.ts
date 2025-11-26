@@ -1,9 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: process.env.NODE_ENV === 'production' ? '/GovindaSystemsChurchDAO' : '',
+  output: 'export',
+  basePath: '/GovindaSystemsChurchDAO',
   images: {
-    unoptimized: process.env.NODE_ENV === 'production',
+    unoptimized: true,
   },
   async headers() {
     return [
