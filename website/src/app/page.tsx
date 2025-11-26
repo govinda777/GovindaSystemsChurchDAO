@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { usePrivy } from '@privy-io/react-auth';
 import Hero from '../components/Hero';
 import ChurchFoundation from '../components/ChurchFoundation';
-import Ceremonies from '../components/Ceremonies';
+import ProtocolApp from '../components/ProtocolApp';
 import Donations from '../components/Donations';
 import Audit from '../components/Audit';
 import Philanthropy from '../components/Philanthropy';
@@ -57,10 +57,7 @@ export default function Home() {
       />
       <Hero />
       <ChurchFoundation />
-      <Ceremonies openScheduleModal={() => {
-        // This will be replaced with a link to the contact page
-        window.location.href = '/pages/contato';
-      }} />
+      <ProtocolApp />
       <Donations
         totalDonations={totalDonations}
         handleDonate={handleDonate}
